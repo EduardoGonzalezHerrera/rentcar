@@ -7,7 +7,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 @EntityScan(basePackages = "lk.codelabs.rentcloud.model.entity.customer")
-//@EnableEurekaClient
+@EnableEurekaClient
 public class CustomerServiceApplication {
 
     public static void main(String[] args) {
