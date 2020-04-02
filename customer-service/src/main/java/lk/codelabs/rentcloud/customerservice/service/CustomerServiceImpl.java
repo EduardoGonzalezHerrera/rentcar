@@ -31,7 +31,6 @@ public class CustomerServiceImpl implements CustomerService {
     			                     customer.getZipcode(),
     			                     customer.getLoyalities());
     	return customerRepository.save(entity);
-    	
     }
 
     @Override
