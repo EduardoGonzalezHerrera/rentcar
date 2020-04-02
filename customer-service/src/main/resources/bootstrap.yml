@@ -2,10 +2,10 @@ spring:
   application:
     name: customer
 server:
-  port: 8080
+  port: 0
 eureka:
   client:
-    register-with-eureka: false
-    fetch-registry: false
+    register-with-eureka: true
+    fetch-registry: true
   instance:
     instance-id: ${spring.application.name}-${random.int}    
