@@ -36,7 +36,6 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public Customer findById(int id) {
         Optional<Customer> customer = customerRepository.findById(id);
-
         if (customer.isPresent())
             return customer.get();
         else
